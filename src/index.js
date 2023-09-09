@@ -1,1 +1,3 @@
-console.log("Working as expected");
+import "./style.css";
+
+console.log("Javascript file is working");

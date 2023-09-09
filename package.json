@@ -1,10 +1,11 @@
 {
   "name": "restaurant-page",
+  "mode": "development",
   "version": "1.0.0",
   "description": "Create a Restaurant Page using Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/Babb2000/Restaurant-Page#readme",
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }
