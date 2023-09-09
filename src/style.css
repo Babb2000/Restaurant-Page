@@ -1,5 +1,17 @@
-.flex-header{
-    height: 100px;
-    width: 100px;
-    background-color: rgb(255, 127, 0);
+*{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("../assets/Fish_Salad.jpg");
+    background-position: center center;
+    background-size: cover;
+
 }
