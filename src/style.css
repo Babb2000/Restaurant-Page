@@ -15,3 +15,30 @@ body{
     background-size: cover;
 
 }
+
+.flex-header{
+    position: sticky;
+    height: 25vh;
+    width: 100%;
+    border: 2px solid silver;
+    background-color: #eefbfd;
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: static;
+    color: white;
+    font-weight: 900;
+    text-shadow: 5px 5px 2.5px black;
+    font-size: 45px;
+}
+
+h1:hover{
+    position: relative;
+    bottom: 5px;
+    font-style: underline;
+}
