@@ -18,7 +18,8 @@ body{
 
 .flex-header{
     position: sticky;
-    height: 220px;
+    top: 1px;
+    height: 180px;
     width: 100%;
     border: 2px solid silver;
     background-color: #eefbfd;
