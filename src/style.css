@@ -72,7 +72,6 @@ h1{
 .imageHolder2{
     height: 300px;
     width: 600px;
-    border: solid 1px black;
     position: relative;
     top: 40px;
     left: -80px;
@@ -84,13 +83,28 @@ h1{
     background-color: #F1F1F1;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 
+
 .imgContainer1, .imgContainer2, .imgContainer3{
-    border: 2px solid black;
     width: 400px;
     height: 400px;
+    margin-top: 10px;
 }
+
+
+.imgContainer1 img, .imgContainer2 img, .imgContainer3 img{
+    height: 100%;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+
