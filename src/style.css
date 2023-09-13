@@ -12,7 +12,7 @@ html, body{
 .backgroundImage{
    max-width: 100%;
    height: 1108px;
-   background-image: url("../assets/sts.jpeg");
+   background-image: url("../assets/heroImage1.jpg");
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -21,7 +21,7 @@ html, body{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .thirdSection{
@@ -32,23 +32,6 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h1{
-    text-align: center;
-    font-size: 120px;
-    color: transparent;
-    margin-left: 80px;
-    background-image: url("/assets/Gold-Metal-Sign-Extended.svg");
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-}
-
-@keyframes back{
-    100%{
-        background-position: 2000px 0;
-    }
 }
 
 .aboutDesc{
@@ -100,10 +83,6 @@ h1{
 .imgContainer1 img, .imgContainer2 img, .imgContainer3 img{
     height: 100%;
     width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
 }
 
 
