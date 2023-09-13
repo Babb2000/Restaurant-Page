@@ -95,11 +95,14 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 10px;
 
 }
 
-
+p{
+    background-color: rgb(0,0,0,0.4);
+    color: white;
+    font-size: 2rem;
+}
 .imgContainer1, .imgContainer2, .imgContainer3{
     width: 400px;
     height: 400px;
@@ -134,10 +137,12 @@ html, body{
     align-self: flex-start;
     font-family:'Playfair Display', serif;
     margin-top: 60px;
+    text-decoration: underline;
 }
 
 .containerDiv{
     display: flex;
+    margin-top: 10px;
 }
 
 .item{
@@ -145,12 +150,45 @@ html, body{
     height: auto;
     border: 1px solid black;
 }
+.item .number2{
+    width: 300px;
+}
+
+.containerDiv3{
+    height: 400px;
+}
+
+.item .number3{
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 
 h2{
     color: white;
     font-size: 50px;
     font-weight: 900;
+    background-color: rgb(0,0,0,0.4);
+    text-decoration: underline;
 
 }
 
+.buttonCont{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border-radius: 12rem;
+    padding: 8px 24px;
+    cursor: pointer;
+    color: rgba(0,0,0,.3);
+    white-space: nowrap;
+    font-size: 2rem;
+    position: absoulte;
+
+}
 
