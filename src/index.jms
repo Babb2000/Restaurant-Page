@@ -12,11 +12,13 @@ import { setValue } from "./App/pageLoad";
         firstDiv.classList.add(firstLevelClasses[0]);
         firstDiv.appendChild(img);
 
-        let secondDiv = document.createElement(firstLevelClasses[1]);
+        let secondDiv = document.createElement("div");
+        secondDiv.classList.add(firstLevelClasses[1]);
         let thirdDiv = document.createElement("div");
         thirdDiv.classList.add("menuContainer");
         let firstUl = document.createElement("div");
         firstUl.classList.add("listContainer");
+        firstUl.style.listStyleType = "none";
 
         for(let i = 0; i < 4; i++){
             let li = document.createElement("li");
