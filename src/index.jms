@@ -1,6 +1,34 @@
 import "./style.css";
-import { setValue } from "./App/pageLoad";
+import { setValue } from "./App/Utilities/pageLoad";
     
+    const listenForMenuClick = ()=>{
+      const listContainer = document.querySelector(".listContainer");
+      if(listContainer){
+        const anchorTags = listContainer.querySelectorAll("li a");
+        anchorTags.forEach((aTag)=>{
+          aTag.addEventListener("click", function(e){
+            console.log(aTag);
+            let strVal = aTag.textContent;
+            console.log(strVal);
+
+            switch(strVal){
+              case "Home":
+                break;
+              case "About Us":
+                alert("You are being redirected to the About Us Page");
+              break;
+              case "Menu":
+                alert("You are being redirected to the Menu Page");
+              break;
+              case "Reservations":
+                alert("You are being redirected to the Reservations Page");
+              break;
+            }
+          })
+        })
+      }
+    }
+
     const footerSectionContainers = (footerSect)=>{
       let mainDiv1 = document.createElement("div");
       mainDiv1.classList.add("inputContainers");
@@ -200,7 +228,7 @@ import { setValue } from "./App/pageLoad";
       
     }
 
-    const heroImageContainers = (heroDiv) => {
+      const heroImageContainers = (heroDiv) => {
       let textArr = ["Home", "About Us", "Menu", "Reservations"];
       let firstLevelClasses = ["flexContainer1", "flexContainer2"];
       const img = document.createElement("img");
@@ -260,7 +288,7 @@ import { setValue } from "./App/pageLoad";
       const value = await setValue();
     
       if (value) {
-        console.log("Inside If Statement");
         homePage();
-      }
+        listenForMenuClick();
+        }
     })();
