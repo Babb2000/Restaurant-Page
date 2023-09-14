@@ -1,38 +1,116 @@
 import "./style.css";
 import { setValue } from "./App/pageLoad";
     
-    const heroImageContainers = (heroDiv) => {
-        let textArr = ["Home", "About Us", "Menu", "Reservations"];
-        let firstLevelClasses = ["flexContainer1", "flexContainer2"];
-        const img = document.createElement("img");
-        img.src = "./assets/logoTest1.svg";
-        img.alt = "Logo";
+    const footerSectionContainers = (footerSect)=>{
+      let mainDiv1 = document.createElement("div");
+      mainDiv1.classList.add("inputContainers");
 
-        let firstDiv = document.createElement("div");
-        firstDiv.classList.add(firstLevelClasses[0]);
-        firstDiv.appendChild(img);
+      let mainDiv1Child1 = document.createElement("div");
+      mainDiv1Child1.classList.add("footerHeaderContainer");
 
-        let secondDiv = document.createElement("div");
-        secondDiv.classList.add(firstLevelClasses[1]);
-        let thirdDiv = document.createElement("div");
-        thirdDiv.classList.add("menuContainer");
-        let firstUl = document.createElement("div");
-        firstUl.classList.add("listContainer");
-        firstUl.style.listStyleType = "none";
+      let h5 = document.createElement("h5");
+      let text1 = document.createTextNode("Contact Us");
+      h5.appendChild(text1);
 
-        for(let i = 0; i < 4; i++){
-            let li = document.createElement("li");
-            let a = document.createElement("a");
-            a.innerHTML = `${textArr[i]}`;
-            li.appendChild(a);
-            firstUl.appendChild(li);
-        }
+      let h6 = document.createElement("h6");
+      let text2 = document.createTextNode("Send Us A Message");
+      h6.appendChild(text2);
+      mainDiv1Child1.appendChild(h5);
+      mainDiv1Child1.appendChild(h6);
+      mainDiv1.appendChild(mainDiv1Child1);
 
-        thirdDiv.appendChild(firstUl);
-        secondDiv.appendChild(thirdDiv);
-        
-        heroDiv.appendChild(firstDiv);
-        heroDiv.appendChild(secondDiv);
+      let mainDiv2Child2 = document.createElement("div");
+      mainDiv2Child2.classList.add("inputFeildContainer");
+      let input1 = document.createElement("input");
+      input1.type = "text";
+      input1.placeholder = "Name: ";
+
+      let input2 = document.createElement("input");
+      input2.type = "email";
+      input2.placeholder = "babbwebdev@gmail.com";
+
+      let input3 = document.createElement("input");
+      input3.setAttribute("id", "yourMessage");
+      input3.type = "text";
+      input3.placeholder = "Your Message";
+
+      mainDiv2Child2.appendChild(input1);
+      mainDiv2Child2.appendChild(input2);
+      mainDiv2Child2.appendChild(input3);
+      mainDiv1.appendChild(mainDiv2Child2);
+
+
+      let mainDiv3Child3 = document.createElement("div");
+      mainDiv3Child3.classList.add("footerButtonContainer");
+      let button = document.createElement("button");
+      button.classList.add("footerButton");
+      let text4 = document.createTextNode("Submit");
+      button.appendChild(text4);
+      mainDiv3Child3.appendChild(button);
+      mainDiv1.appendChild(mainDiv3Child3);
+      //End of first main container
+
+
+      let mainDiv2 = document.createElement("div");
+      mainDiv2.classList.add("logoContainers");
+
+      let logoContainers = document.createElement("div");
+      logoContainers.classList.add("logoContainers");
+
+      let gitHubImage = document.createElement("div");
+      gitHubImage.classList.add("gitHubContainer");
+
+      let igImage = document.createElement("div");
+      igImage.classList.add("igContainer");
+
+      logoContainers.appendChild(gitHubImage);
+      logoContainers.appendChild(igImage);
+
+      mainDiv2.appendChild(logoContainers);
+
+      let mainDiv3 = document.createElement("div");
+      mainDiv3.classList.add("websiteFooterLogo");
+
+      let finalContainer = document.createElement("div");
+      finalContainer.classList.add("finalContainer");
+
+      mainDiv3.appendChild(finalContainer);
+
+      footerSect.appendChild(mainDiv1);
+      footerSect.appendChild(mainDiv2);
+      footerSect.appendChild(mainDiv3);
+    }
+
+    const thirdSectionContainers = (thirdSect)=>{
+      let mainDiv = document.createElement("div");
+      mainDiv.classList.add("imageAndCaptionFlex");
+
+      let firstChildDiv = document.createElement("div");
+      firstChildDiv.classList.add("sect3Image");
+
+      let secondChildDiv = document.createElement("div");
+      secondChildDiv.classList.add("sect3Header");
+
+      let text1 = document.createTextNode("1810 Pompeii Oven");
+      let text2 = document.createTextNode("Wood-Fire Flavored");
+      let text3 = document.createTextNode("Here at Good Taste we house a one of a kind brick oven located in the back of the kitchen. This beauty dishes out carmelized, crisp, wood-flavored, melted goodness. The high cooking temperatures allows for quick cooking times and imparts a desirable crust and char for a variety of dishes.");
+
+      let h3 = document.createElement("h3");
+      h3.appendChild(text1);
+      let h4 = document.createElement("h4");
+      h4.appendChild(text2);
+      let p = document.createElement("p");
+      p.setAttribute("id", "flexP");
+      p.appendChild(text3);
+
+      secondChildDiv.appendChild(h3);
+      secondChildDiv.appendChild(h4);
+      secondChildDiv.appendChild(p);
+
+      mainDiv.appendChild(firstChildDiv);
+      mainDiv.appendChild(secondChildDiv);
+      thirdSect.appendChild(mainDiv);
+
     }
 
     const secondSectionContainers = (secondSection)=>{
@@ -79,7 +157,7 @@ import { setValue } from "./App/pageLoad";
       divContainer2.appendChild(figContainer1);
       divContainer2.appendChild(figContainer2);
       divContainer2.appendChild(figContainer3);
-      
+
       secondSection.appendChild(divContainer1);
       secondSection.appendChild(divContainer2)
 
@@ -121,6 +199,40 @@ import { setValue } from "./App/pageLoad";
 
       
     }
+
+    const heroImageContainers = (heroDiv) => {
+      let textArr = ["Home", "About Us", "Menu", "Reservations"];
+      let firstLevelClasses = ["flexContainer1", "flexContainer2"];
+      const img = document.createElement("img");
+      img.src = "./assets/logoTest1.svg";
+      img.alt = "Logo";
+
+      let firstDiv = document.createElement("div");
+      firstDiv.classList.add(firstLevelClasses[0]);
+      firstDiv.appendChild(img);
+
+      let secondDiv = document.createElement("div");
+      secondDiv.classList.add(firstLevelClasses[1]);
+      let thirdDiv = document.createElement("div");
+      thirdDiv.classList.add("menuContainer");
+      let firstUl = document.createElement("div");
+      firstUl.classList.add("listContainer");
+      firstUl.style.listStyleType = "none";
+
+      for(let i = 0; i < 4; i++){
+          let li = document.createElement("li");
+          let a = document.createElement("a");
+          a.innerHTML = `${textArr[i]}`;
+          li.appendChild(a);
+          firstUl.appendChild(li);
+      }
+
+      thirdDiv.appendChild(firstUl);
+      secondDiv.appendChild(thirdDiv);
+      
+      heroDiv.appendChild(firstDiv);
+      heroDiv.appendChild(secondDiv);
+  }
     
     const homePage = () => {
       const mainContainer = document.getElementById("content");
@@ -140,6 +252,8 @@ import { setValue } from "./App/pageLoad";
       heroImageContainers(createdMainSections[0]);
       firstSectionContainers(createdMainSections[1]);
       secondSectionContainers(createdMainSections[2]);
+      thirdSectionContainers(createdMainSections[3]);
+      footerSectionContainers(createdMainSections[4]);
     };
     
     (async () => {
