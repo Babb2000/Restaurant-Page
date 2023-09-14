@@ -13,8 +13,10 @@ import { setValue } from "./App/pageLoad";
         firstDiv.appendChild(img);
 
         let secondDiv = document.createElement(firstLevelClasses[1]);
-        let thirdDiv = document.createElement("menuContainer");
-        let firstUl = document.createElement("listContainer");
+        let thirdDiv = document.createElement("div");
+        thirdDiv.classList.add("menuContainer");
+        let firstUl = document.createElement("div");
+        firstUl.classList.add("listContainer");
 
         for(let i = 0; i < 4; i++){
             let li = document.createElement("li");
