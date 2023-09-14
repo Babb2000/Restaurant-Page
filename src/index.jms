@@ -33,7 +33,58 @@ import { setValue } from "./App/pageLoad";
         
         heroDiv.appendChild(firstDiv);
         heroDiv.appendChild(secondDiv);
-    };
+    }
+
+    const secondSectionContainers = (secondSection)=>{
+      let divContainer1 = document.createElement("div");
+      divContainer1.classList.add("container1");
+      
+      let h2 = document.createElement("h2");
+      let textNode = document.createTextNode("Signature Dishes");
+      h2.appendChild(textNode);
+      divContainer1.appendChild(h2);
+
+      let divContainer2 = document.createElement("div");
+      divContainer2.classList.add("container2");
+
+      let figContainer1 = document.createElement("figure");
+      figContainer1.classList.add("imageCarrier1");
+
+      let figCaption = document.createElement("figcaption");
+      let textFig = document.createTextNode("Fettucine Alfredo Pasta");
+
+      figCaption.appendChild(textFig);
+      figContainer1.appendChild(figCaption);
+
+      let figContainer2 = document.createElement("figure");
+      figContainer2.classList.add("imageCarrier2");
+
+      let figCaption2 = document.createElement("figcaption");
+      let textFig2 = document.createTextNode("Baby Basil Pasta");
+
+      figCaption2.appendChild(textFig2);
+      figContainer2.appendChild(figCaption2);
+
+      let figContainer3 = document.createElement("figure");
+      figContainer3.classList.add("imageCarrier3");
+
+      let figCaption3 = document.createElement("figcaption");
+      let textFig3 = document.createTextNode("House Salad");
+
+      figCaption3.appendChild(textFig3);
+      figContainer3.appendChild(figCaption3);
+
+
+
+      divContainer2.appendChild(figContainer1);
+      divContainer2.appendChild(figContainer2);
+      divContainer2.appendChild(figContainer3);
+      
+      secondSection.appendChild(divContainer1);
+      secondSection.appendChild(divContainer2)
+
+
+    }
 
     const firstSectionContainers = (firstSect) =>{
       let containerDiv1 = document.createElement("div");
@@ -88,6 +139,7 @@ import { setValue } from "./App/pageLoad";
     
       heroImageContainers(createdMainSections[0]);
       firstSectionContainers(createdMainSections[1]);
+      secondSectionContainers(createdMainSections[2]);
     };
     
     (async () => {
