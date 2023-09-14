@@ -79,6 +79,32 @@ h2{
 
 }
 
+h3{
+    text-align: center;
+    font-size: 65px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h4{
+    text-align: center;
+    font-size: 40px;
+}
+
+h5, h6{
+    justify-content: center;
+    color: white;
+}
+
+h5{
+    font-size: 45px;
+}
+
+h6{
+    font-size: 35px;
+}
+
 #btn1{
     width: 258px;
     height: 70px; 
@@ -94,6 +120,14 @@ h2{
     color: white;
     position: relative;
     bottom: 5px;
+}
+
+#flexP{
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .thirdSection{
@@ -143,11 +177,6 @@ h2{
     display: flex;
 }
 
-#thirdSection{
-    width: 100%;
-    height: 800px;
-    background-color: #F1F1F1;
-}
 
 .secondSection{
     width: 100%;
@@ -198,13 +227,6 @@ figcaption{
     margin: 10px;
 }
 
-p{
-    background-color: rgb(0,0,0,0.4);
-    color: white;
-    font-size: 1.5rem;
-}
-
-
 .overLayContainer{
     height: 80%;
     width: 80%;
@@ -227,4 +249,69 @@ p{
     justify-content: space-around;
     align-items: center;
     align-content: flex-start;
+}
+
+.thirdSection{
+    width: 100%;
+    height: 600px;
+    background-color: #F1F1F1;
+}
+
+.imageAndCaptionFlex{
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sect3Image{
+    width: 50%;
+    height: 50%;
+    background-image: url("../assets/brickOven.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 15px;
+}
+
+p{
+    min-width: 200px;
+}
+
+.footerSection{
+    height: 397px;
+    width: 100%;
+    background-image: url("../assets/footerRestaurantImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+}
+
+.inputContainers, .logoContainers, .websiteFooterLogo{
+    width: 600px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.inputContainers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerHeaderContainer, .inputFeildContainer, .footerButtonContainer{
+    width: 90%;
+    height: 85%;
+    border: 1px solid blue;
+}
+
+.footerHeaderContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
