@@ -1,7 +1,13 @@
+let value;
 
+const setValue = () => {
+    return new Promise((resolve) => {
+        window.document.addEventListener("DOMContentLoaded", function(){
+            console.log("DOM Content Loaded");
+            value = true;
+            resolve(value);
+        });
+    });
+}
 
-const value = window.document.addEventListener("DOM Content Loaded", function(){
-    return true;
-})
-
-export {value};
+export { setValue };
