@@ -1,0 +1,59 @@
+import "./style.css";
+import { setValue } from "./App/pageLoad";
+    
+    const heroImageContainers = (heroDiv) => {
+        let textArr = ["Home", "About Us", "Menu", "Reservations"];
+        let firstLevelClasses = ["flexContainer1", "flexContainer2"];
+        const img = document.createElement("img");
+        img.src = "./assets/logoTest1.svg";
+        img.alt = "Logo";
+
+        let firstDiv = document.createElement("div");
+        firstDiv.classList.add(firstLevelClasses[0]);
+        firstDiv.appendChild(img);
+
+        let secondDiv = document.createElement(firstLevelClasses[1]);
+        let thirdDiv = document.createElement("menuContainer");
+        let firstUl = document.createElement("listContainer");
+
+        for(let i = 0; i < 4; i++){
+            let li = document.createElement("li");
+            let a = document.createElement("a");
+            a.innerHTML = `${textArr[i]}`;
+            li.appendChild(a);
+            firstUl.appendChild(li);
+        }
+
+        thirdDiv.appendChild(firstUl);
+        secondDiv.appendChild(thirdDiv);
+        
+        heroDiv.appendChild(firstDiv);
+        heroDiv.appendChild(secondDiv);
+    };
+    
+    const homePage = () => {
+      const mainContainer = document.getElementById("content");
+      const mainSectionClasses = ["heroImage", "firstSection", "secondSection", "thirdSection", "footerSection"];
+      const createdMainSections = [];
+    
+      for (let i = 0; i < mainSectionClasses.length; i++) {
+        const div = document.createElement("div");
+        div.classList.add(mainSectionClasses[i]);
+        createdMainSections.push(div);
+      }
+    
+      createdMainSections.forEach((section) => {
+        mainContainer.appendChild(section);
+      });
+    
+      heroImageContainers(createdMainSections[0]);
+    };
+    
+    (async () => {
+      const value = await setValue();
+    
+      if (value) {
+        console.log("Inside If Statement");
+        homePage();
+      }
+    })();
