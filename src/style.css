@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Italiana', serif;
 }
 
 html, body{
@@ -63,6 +64,37 @@ li:hover{
     bottom: 3px;
 }
 
+h1{
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: 65px;
+    color: #913C1F;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+#btn1{
+    width: 258px;
+    height: 70px; 
+    background-color: silver;
+    margin: 20px;
+    border-radius: 15px 15px 15px;
+    font-size: 35px;
+    color: #FFD9D9;
+}
+
+#btn1:hover{
+    background-color: transparent;
+    color: white;
+    position: relative;
+    bottom: 5px;
+}
 
 .thirdSection{
     width: 100%;
@@ -77,13 +109,20 @@ li:hover{
 .leftSide, .rightSide{
     width: 50%;
     height: 100%;
-    border: 1px solid #ff0000;
 }
 
 .leftSide{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-left: -100px;
 }
 
 .backImageContainer{
@@ -110,17 +149,53 @@ li:hover{
     background-color: #F1F1F1;
 }
 
-
-
-
 .secondSection{
     width: 100%;
-    height: 600px;
-    background-image: url("../assets/outDoorSeatingFinal.jpg");
+    height: 800px;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container1{
+    width: 100%;
+    height: auto;
+}
+
+.container2{
+    height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageCarrier1, .imageCarrier2, .imageCarrier3{
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    
+}
+
+.imageCarrier1{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/chickenAlfredo.jpg");
+}
+
+.imageCarrier2{
+    background-image: url("../assets/greenPizza.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.imageCarrier3{
+    background-image: url("../assets/salad.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+figcaption{
+    text-align: center;
+    margin: 10px;
 }
 
 p{
@@ -128,100 +203,7 @@ p{
     color: white;
     font-size: 1.5rem;
 }
-.imgContainer1, .imgContainer2, .imgContainer3{
-    width: 400px;
-    height: 400px;
-    margin-top: 10px;
-}
 
-
-.imgContainer1 img, .imgContainer2 img, .imgContainer3 img{
-    height: 100%;
-    width: 100%;
-}
-
-
-.imgCapHeader{
-   margin-top: 10px;
-    color: #953611;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.imgCapSub{
-    margin-top: 10px;
-    color: gray;
-    font-family: sans-serif;
-    font-size: 12px;
-    text-align: center;
-}
-
-.imgHeader{
-    color: #953611;
-    align-self: flex-start;
-    font-family:'Playfair Display', serif;
-    margin-top: 60px;
-    text-decoration: underline;
-}
-
-.containerDiv{
-    display: flex;
-    margin-top: 10px;
-}
-
-.item{
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
-}
-.item .number2{
-    width: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.containerDiv3{
-    height: 400px;
-}
-
-.item .number3{
-    border: 1px solid black;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-
-h2{
-    color: white;
-    font-size: 50px;
-    font-weight: 900;
-    background-color: rgb(0,0,0,0.4);
-    text-decoration: underline;
-
-}
-
-.buttonCont{
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button{
-    border-radius: 12rem;
-    padding: 8px 24px;
-    cursor: pointer;
-    background-color: transparent;
-    white-space: nowrap;
-    font-size: 2rem;
-    position: absolute;
-}
-
-button:hover{
-    color: white;
-    position: relative;
-    bottom: 5px;
-}
 
 .overLayContainer{
     height: 80%;
@@ -231,4 +213,18 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.frontImageCaption{
+    background-image: linear-gradient(to bottom, silver, rgba(255,255,255,0));
+    height: 300px;
+    width: 450px;
+    border-radius: 15px 15px 15px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
 }
