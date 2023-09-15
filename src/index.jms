@@ -1,7 +1,9 @@
 import "./style.css";
 import { setValue } from "./App/Utilities/pageLoad";
+import { clearDom } from "./App/Utilities/clearDom"
     
     const listenForMenuClick = ()=>{
+      const rootDiv = document.getElementById("content");
       const listContainer = document.querySelector(".listContainer");
       if(listContainer){
         const anchorTags = listContainer.querySelectorAll("li a");
@@ -13,15 +15,16 @@ import { setValue } from "./App/Utilities/pageLoad";
 
             switch(strVal){
               case "Home":
+                clearDom(rootDiv);
                 break;
               case "About Us":
-                alert("You are being redirected to the About Us Page");
+                clearDom(rootDiv);
               break;
               case "Menu":
-                alert("You are being redirected to the Menu Page");
+                clearDom(rootDiv);
               break;
               case "Reservations":
-                alert("You are being redirected to the Reservations Page");
+                clearDom(rootDiv);
               break;
             }
           })
