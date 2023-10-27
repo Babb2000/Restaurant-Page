@@ -2,6 +2,8 @@ import "./style.css";
 import { setValue } from "./App/Utilities/pageLoad";
 import { clearDom } from "./App/Utilities/clearDom";
 import { menuPage } from "./App/menuItems/menu";
+
+
     
     const listenForMenuClick = ()=>{
       const listContainer = document.querySelector(".listContainer");
