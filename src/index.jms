@@ -1,30 +1,31 @@
 import "./style.css";
 import { setValue } from "./App/Utilities/pageLoad";
-import { clearDom } from "./App/Utilities/clearDom"
+import { clearDom } from "./App/Utilities/clearDom";
+import { menuPage } from "./App/menuItems/menu";
     
     const listenForMenuClick = ()=>{
-      const rootDiv = document.getElementById("content");
       const listContainer = document.querySelector(".listContainer");
       if(listContainer){
         const anchorTags = listContainer.querySelectorAll("li a");
         anchorTags.forEach((aTag)=>{
-          aTag.addEventListener("click", function(e){
+          aTag.addEventListener("click", function(){
             console.log(aTag);
             let strVal = aTag.textContent;
             console.log(strVal);
 
             switch(strVal){
-              case "Home":
-                clearDom(rootDiv);
+              case "Home": //New Module to append Home Page to the page
+                clearDom();
                 break;
-              case "About Us":
-                clearDom(rootDiv);
+              case "About Us": //New Module to append About Us to the page
+                clearDom();
               break;
-              case "Menu":
-                clearDom(rootDiv);
+              case "Menu":  //New Module to append Menu to the page
+                clearDom();
+                menuPage();
               break;
-              case "Reservations":
-                clearDom(rootDiv);
+              case "Reservations": //New Module to append Reservations to the page
+                clearDom();
               break;
             }
           })
