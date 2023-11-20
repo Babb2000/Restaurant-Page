@@ -16,26 +16,46 @@ export const menuPage = ()=> {
     
 
     //Create table and add header row
-    let table = document.createElement("table");
-    let thead = document.createElement("thead");
+    // let table = document.createElement("table");
+    // let thead = document.createElement("thead");
+    // let textNode1 = document.createTextNode("Dish");
+    // let textNode2 = document.createTextNode("Ingredients");
+    // let textNode3 = document.createTextNode("Price");
+    // let row1 = document.createElement("tr");
+    // let th1 = document.createElement("th");
+    // th1.style.fontSize = "55px";
+    // th1.appendChild(textNode1);
+    // let th2 = document.createElement("th");
+    // th2.style.fontSize = "55px"
+    // th2.appendChild(textNode2);
+    // let th3 = document.createElement("th");
+    // th3.appendChild(textNode3);
+    // th3.style.fontSize = "55px";
+    // row1.appendChild(th1);
+    // row1.appendChild(th2);
+    // row1.appendChild(th3);
+    // thead.appendChild(row1);
+    // table.appendChild(thead);
+
+    //Redo Table with grid
+    let divHeader = document.createElement("div");
+    divHeader.classList.add("divHeader");
+    let divHeaderCont1 = document.createElement("div");
     let textNode1 = document.createTextNode("Dish");
+    divHeaderCont1.classList.add("divHeader-flexboxItem");
+    divHeaderCont1.appendChild(textNode1);
+    let divHeaderCont2 = document.createElement("div");
     let textNode2 = document.createTextNode("Ingredients");
+    divHeaderCont2.classList.add("divHeader-flexboxItem");
+    divHeaderCont2.appendChild(textNode2);
+    let divHeaderCont3 = document.createElement("div");
     let textNode3 = document.createTextNode("Price");
-    let row1 = document.createElement("tr");
-    let th1 = document.createElement("th");
-    th1.style.fontSize = "55px";
-    th1.appendChild(textNode1);
-    let th2 = document.createElement("th");
-    th2.style.fontSize = "55px"
-    th2.appendChild(textNode2);
-    let th3 = document.createElement("th");
-    th3.appendChild(textNode3);
-    th3.style.fontSize = "55px";
-    row1.appendChild(th1);
-    row1.appendChild(th2);
-    row1.appendChild(th3);
-    thead.appendChild(row1);
-    table.appendChild(thead);
+    divHeaderCont3.classList.add("divHeader-flexboxItem");
+    divHeaderCont3.appendChild(textNode3);
+    divHeader.appendChild(divHeaderCont1);
+    divHeader.appendChild(divHeaderCont2);
+    divHeader.appendChild(divHeaderCont3);
+    
     
 
     //Creating flexbox grid
@@ -60,7 +80,7 @@ export const menuPage = ()=> {
     
     
     
-    secondDiv.appendChild(table);
+    secondDiv.appendChild(divHeader);
     secondDiv.appendChild(div1);
     backgroundDiv.appendChild(secondDiv);
     mainDiv.appendChild(backgroundDiv);
