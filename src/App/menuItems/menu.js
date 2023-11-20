@@ -15,29 +15,7 @@ export const menuPage = ()=> {
     secondDiv.style.alignItems = "stretch";
     
 
-    //Create table and add header row
-    // let table = document.createElement("table");
-    // let thead = document.createElement("thead");
-    // let textNode1 = document.createTextNode("Dish");
-    // let textNode2 = document.createTextNode("Ingredients");
-    // let textNode3 = document.createTextNode("Price");
-    // let row1 = document.createElement("tr");
-    // let th1 = document.createElement("th");
-    // th1.style.fontSize = "55px";
-    // th1.appendChild(textNode1);
-    // let th2 = document.createElement("th");
-    // th2.style.fontSize = "55px"
-    // th2.appendChild(textNode2);
-    // let th3 = document.createElement("th");
-    // th3.appendChild(textNode3);
-    // th3.style.fontSize = "55px";
-    // row1.appendChild(th1);
-    // row1.appendChild(th2);
-    // row1.appendChild(th3);
-    // thead.appendChild(row1);
-    // table.appendChild(thead);
-
-    //Redo Table with grid
+    //Header with flexBox
     let divHeader = document.createElement("div");
     divHeader.classList.add("divHeader");
     let divHeaderCont1 = document.createElement("div");
@@ -56,7 +34,25 @@ export const menuPage = ()=> {
     divHeader.appendChild(divHeaderCont2);
     divHeader.appendChild(divHeaderCont3);
     
-    
+    //Create 9 divs to be placed inside each column
+    let menuDiv1= document.createElement("div");
+    menuDiv1.classList.add("menuDiv");
+    let menuDiv2= document.createElement("div");
+    menuDiv2.classList.add("menuDiv");
+    let menuDiv3= document.createElement("div");
+    menuDiv3.classList.add("menuDiv");
+    let menuDiv4= document.createElement("div");
+    menuDiv4.classList.add("menuDiv");
+    let menuDiv5= document.createElement("div");
+    menuDiv5.classList.add("menuDiv");
+    let menuDiv6= document.createElement("div");
+    menuDiv6.classList.add("menuDiv");
+    let menuDiv7= document.createElement("div");
+    menuDiv7.classList.add("menuDiv");
+    let menuDiv8= document.createElement("div");
+    menuDiv8.classList.add("menuDiv");
+    let menuDiv9= document.createElement("div");
+    menuDiv9.classList.add("menuDiv");
 
     //Creating flexbox grid
     let div1 = document.createElement("div");
@@ -66,12 +62,21 @@ export const menuPage = ()=> {
     let div2 = document.createElement("div");
     div2.classList.add("lowerMenu-flexboxItem");
     div2.classList.add("lowerMenu-flexboxItem-1");
+    div2.appendChild(menuDiv1);
+    div2.appendChild(menuDiv2);
+    div2.appendChild(menuDiv3);
     let div3 = document.createElement("div");
     div3.classList.add("lowerMenu-flexboxItem");
     div3.classList.add("lowerMenu-flexboxItem-2");
+    div3.appendChild(menuDiv4);
+    div3.appendChild(menuDiv5);
+    div3.appendChild(menuDiv6);
     let div4 = document.createElement("div");
     div4.classList.add("lowerMenu-flexboxItem");
     div4.classList.add("lowerMenu-flexboxItem-3");
+    div4.appendChild(menuDiv7);
+    div4.appendChild(menuDiv8);
+    div4.appendChild(menuDiv9);
 
     div1.appendChild(div2);
     div1.appendChild(div3);
