@@ -11,6 +11,8 @@ secondDiv.classList.add("menuContainer");
 secondDiv.style.width = "80%";
 secondDiv.style.height = "80%";
 secondDiv.style.borderRadius = "30px";
+secondDiv.style.flexDirection = "column";
+secondDiv.style.alignItems = "stretch";
 
 
 let table = document.createElement("table");
