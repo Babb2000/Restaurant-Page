@@ -42,9 +42,9 @@ export const menuPage = ()=> {
     let tbCell1 = document.createElement("td");
     let tbCell2 = document.createElement("td");
     let tbCell3 = document.createElement("td");
-    let textNode4 = document.createTextNode("Meat Pizza");
-    let textNode5 = document.createTextNode("Mama's Special");
-    let textNode6 = document.createTextNode("Margerita Pizza");
+    let textNode4 = document.createTextNode("Fettucine Alfredo Pasta");
+    let textNode5 = document.createTextNode("Baby Basil Pasta");
+    let textNode6 = document.createTextNode("House Salad");
     tbCell1.appendChild(textNode4);
     tbCell2.appendChild(textNode5);
     tbCell3.appendChild(textNode6);
@@ -72,5 +72,3 @@ export const menuPage = ()=> {
 
 
 }
-
-
