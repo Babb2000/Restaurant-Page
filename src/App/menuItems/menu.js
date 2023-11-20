@@ -14,7 +14,8 @@ export const menuPage = ()=> {
     secondDiv.style.flexDirection = "column";
     secondDiv.style.alignItems = "stretch";
     
-    
+
+    //Create table and add header row
     let table = document.createElement("table");
     let thead = document.createElement("thead");
     let textNode1 = document.createTextNode("Dish");
@@ -35,10 +36,26 @@ export const menuPage = ()=> {
     row1.appendChild(th3);
     thead.appendChild(row1);
     
-    
-    
+    //
+    let bodyt = document.createElement("tbody");
+    let row2 = document.createElement("tr");
+    let tbCell1 = document.createElement("td");
+    let tbCell2 = document.createElement("td");
+    let tbCell3 = document.createElement("td");
+    let textNode4 = document.createTextNode("Meat Pizza");
+    let textNode5 = document.createTextNode("Mama's Special");
+    let textNode6 = document.createTextNode("Margerita Pizza");
+    tbCell1.appendChild(textNode4);
+    tbCell2.appendChild(textNode5);
+    tbCell3.appendChild(textNode6);
+    row2.appendChild(tbCell1);
+    row2.appendChild(tbCell2);
+    row2.appendChild(tbCell3);
+    bodyt.appendChild(row2);
+
     
     table.appendChild(thead);
+    table.appendChild(bodyt);
     
     
     
@@ -49,4 +66,11 @@ export const menuPage = ()=> {
     backgroundDiv.appendChild(secondDiv);
     mainDiv.appendChild(backgroundDiv);
     
-    }
+
+
+
+
+
+}
+
+
