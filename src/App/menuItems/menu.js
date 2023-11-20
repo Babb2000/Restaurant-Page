@@ -40,10 +40,22 @@ export const menuPage = ()=> {
 
     //Creating flexbox grid
     let div1 = document.createElement("div");
-    div1.classList.add("lowerMenuContainer");
-    console.log(div1);
+    div1.classList.add("lowerMenu-flexboxContainer");
     
     
+    let div2 = document.createElement("div");
+    div2.classList.add("lowerMenu-flexboxItem");
+    div2.classList.add("lowerMenu-flexboxItem-1");
+    let div3 = document.createElement("div");
+    div3.classList.add("lowerMenu-flexboxItem");
+    div3.classList.add("lowerMenu-flexboxItem-2");
+    let div4 = document.createElement("div");
+    div4.classList.add("lowerMenu-flexboxItem");
+    div4.classList.add("lowerMenu-flexboxItem-3");
+
+    div1.appendChild(div2);
+    div1.appendChild(div3);
+    div1.appendChild(div4);
     
     
     
