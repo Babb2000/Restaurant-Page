@@ -37,6 +37,11 @@ export const menuPage = ()=> {
     thead.appendChild(row1);
     table.appendChild(thead);
     
+
+    //Creating flexbox grid
+    let div1 = document.createElement("div");
+    div1.classList.add("lowerMenuContainer");
+    console.log(div1);
     
     
     
@@ -44,6 +49,7 @@ export const menuPage = ()=> {
     
     
     secondDiv.appendChild(table);
+    secondDiv.appendChild(div1);
     backgroundDiv.appendChild(secondDiv);
     mainDiv.appendChild(backgroundDiv);
     
