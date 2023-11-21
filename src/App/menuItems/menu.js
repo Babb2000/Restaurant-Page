@@ -42,17 +42,17 @@ export const menuPage = ()=> {
     let menuDiv3= document.createElement("div");
     menuDiv3.classList.add("menuDiv");
     let menuDiv4= document.createElement("div");
-    menuDiv4.classList.add("menuDiv");
+    menuDiv4.classList.add("menuDiv2");
     let menuDiv5= document.createElement("div");
-    menuDiv5.classList.add("menuDiv");
+    menuDiv5.classList.add("menuDiv2");
     let menuDiv6= document.createElement("div");
-    menuDiv6.classList.add("menuDiv");
+    menuDiv6.classList.add("menuDiv2");
     let menuDiv7= document.createElement("div");
-    menuDiv7.classList.add("menuDiv");
+    menuDiv7.classList.add("menuDiv3");
     let menuDiv8= document.createElement("div");
-    menuDiv8.classList.add("menuDiv");
+    menuDiv8.classList.add("menuDiv3");
     let menuDiv9= document.createElement("div");
-    menuDiv9.classList.add("menuDiv");
+    menuDiv9.classList.add("menuDiv3");
 
     //Creating flexbox grid
     let div1 = document.createElement("div");
@@ -61,6 +61,10 @@ export const menuPage = ()=> {
     let menuText1 = document.createTextNode("Meat Pizza");
     let menuText2 = document.createTextNode("Greek Pizza");
     let menuText3 = document.createTextNode("Mama's Special");
+
+    let menuText4 = document.createTextNode("Pepperoni, sausage, meatballs, ham, bacon");
+    let menuText5 = document.createTextNode("Feta Cheese, Mozzarella slices, basil");
+    let menuText6 = document.createTextNode("Pepperoni, sausage, meatballs, ham, mushrooms, onions, green peppers, black olives");
     
     let div2 = document.createElement("div");
     div2.classList.add("lowerMenu-flexboxItem");
@@ -74,8 +78,11 @@ export const menuPage = ()=> {
     let div3 = document.createElement("div");
     div3.classList.add("lowerMenu-flexboxItem");
     div3.classList.add("lowerMenu-flexboxItem-2");
+    menuDiv4.appendChild(menuText4);
     div3.appendChild(menuDiv4);
+    menuDiv5.appendChild(menuText5);
     div3.appendChild(menuDiv5);
+    menuDiv6.appendChild(menuText6);
     div3.appendChild(menuDiv6);
     let div4 = document.createElement("div");
     div4.classList.add("lowerMenu-flexboxItem");
