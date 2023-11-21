@@ -449,7 +449,7 @@ input{
     min-height: 300px;
 }
 
-.menuDiv{
+.menuDiv, .menuDiv3{
     height: 275px;
     width: 100%;
     /*background: #D9D9D9;*/
@@ -481,3 +481,8 @@ input{
     font-weight: bolder;
     text-shadow: 2px 2px silver;
 }
+
+.menuDiv3{
+  font-size: 40px !important;
+}
+

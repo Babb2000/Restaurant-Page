@@ -65,6 +65,10 @@ export const menuPage = ()=> {
     let menuText4 = document.createTextNode("Pepperoni, sausage, meatballs, ham, bacon");
     let menuText5 = document.createTextNode("Feta Cheese, Mozzarella slices, basil");
     let menuText6 = document.createTextNode("Pepperoni, sausage, meatballs, ham, mushrooms, onions, green peppers, black olives");
+
+    let menuText7 = document.createTextNode("$27 - $30");
+    let menuText8 = document.createTextNode("$23 - $27");
+    let menuText9 = document.createTextNode("$27 - $32");
     
     let div2 = document.createElement("div");
     div2.classList.add("lowerMenu-flexboxItem");
@@ -87,8 +91,11 @@ export const menuPage = ()=> {
     let div4 = document.createElement("div");
     div4.classList.add("lowerMenu-flexboxItem");
     div4.classList.add("lowerMenu-flexboxItem-3");
+    menuDiv7.appendChild(menuText7);
     div4.appendChild(menuDiv7);
+    menuDiv8.appendChild(menuText8);
     div4.appendChild(menuDiv8);
+    menuDiv9.appendChild(menuText9);
     div4.appendChild(menuDiv9);
 
     div1.appendChild(div2);
