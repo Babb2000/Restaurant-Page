@@ -58,12 +58,18 @@ export const menuPage = ()=> {
     let div1 = document.createElement("div");
     div1.classList.add("lowerMenu-flexboxContainer");
     
+    let menuText1 = document.createTextNode("Meat Pizza");
+    let menuText2 = document.createTextNode("Greek Pizza");
+    let menuText3 = document.createTextNode("Mama's Special");
     
     let div2 = document.createElement("div");
     div2.classList.add("lowerMenu-flexboxItem");
     div2.classList.add("lowerMenu-flexboxItem-1");
+    menuDiv1.appendChild(menuText1);
     div2.appendChild(menuDiv1);
+    menuDiv2.appendChild(menuText2);
     div2.appendChild(menuDiv2);
+    menuDiv3.appendChild(menuText3);
     div2.appendChild(menuDiv3);
     let div3 = document.createElement("div");
     div3.classList.add("lowerMenu-flexboxItem");

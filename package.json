@@ -1,6 +1,6 @@
 {
   "name": "restaurant-page",
-  "mode": "development",
+  "mode": "production",
   "version": "1.0.0",
   "description": "Create a Restaurant Page using Webpack",
   "main": "index.js",

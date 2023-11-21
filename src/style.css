@@ -396,3 +396,64 @@ input{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+.divHeader{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divHeader-flexboxItem{
+    width: 200px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.lowerMenu-flexboxContainer{
+    height: 100%;
+    width: 100%;
+    border: 2px solid silver;
+    border-radius: 5px 5px 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.lowerMenu-flexboxItem{
+    width: 200px;
+    margin: 10px;
+    border: 2px solid silver;
+    background-color: white;
+}
+
+.lowerMenu-flexboxItem-1{
+    min-height: 100px;
+}
+
+.lowerMenu-flexboxItem-2{
+    min-height: 200px;
+}
+
+.lowerMenu-flexboxItem-3{
+    min-height: 300px;
+}
+
+.menuDiv{
+    height: 275px;
+    width: 100%;
+    background: #D9D9D9;
+    padding: 5px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
