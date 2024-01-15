@@ -1,18 +1,9 @@
 //Menu Module
 export const menuPage = ()=> {
 
-    const mainDiv = document.getElementById("content");
-    const backgroundDiv = document.createElement("div");
-    backgroundDiv.classList.add("heroImage");
-    mainDiv.appendChild(backgroundDiv);
-    
-    const secondDiv = document.createElement("div");
-    secondDiv.classList.add("menuContainer");
-    secondDiv.style.width = "80%";
-    secondDiv.style.height = "80%";
-    secondDiv.style.borderRadius = "30px";
-    secondDiv.style.flexDirection = "column";
-    secondDiv.style.alignItems = "stretch";
+    const backgroundDiv = document.getElementsByClassName("heroImage")[0];
+    const bottomDiv = document.createElement("div");
+    bottomDiv.classList.add("bottomDiv");
     
 
     //Header with flexBox
@@ -102,17 +93,10 @@ export const menuPage = ()=> {
     div1.appendChild(div3);
     div1.appendChild(div4);
     
-    
-    
-    
-    secondDiv.appendChild(divHeader);
-    secondDiv.appendChild(div1);
-    backgroundDiv.appendChild(secondDiv);
-    mainDiv.appendChild(backgroundDiv);
+    bottomDiv.appendChild(divHeader);
+    bottomDiv.appendChild(div1);
+    backgroundDiv.appendChild(bottomDiv);
     
 
-
-
-
-
-}
+   
+};

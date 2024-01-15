@@ -1,6 +1,6 @@
 export const menuBar = () => {
 
-
+    
     const mainDiv = document.getElementById("content");
     const backgroundDiv = document.createElement("div");
     backgroundDiv.classList.add("heroImage");
@@ -46,9 +46,5 @@ export const menuBar = () => {
     
     backgroundDiv.appendChild(container1);
     backgroundDiv.appendChild(container2);
-
-
-
-
 
 }

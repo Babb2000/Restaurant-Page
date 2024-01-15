@@ -26,7 +26,7 @@ import { menuBar }  from "./App/Utilities/menuBar.js";
               case "Menu":  //New Module to append Menu to the page
                 clearDom();
                 menuBar();
-                //menuPage();
+                menuPage();
               break;
               case "Reservations": //New Module to append Reservations to the page
                 clearDom();
