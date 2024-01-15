@@ -3,6 +3,7 @@ import { setValue } from "./App/Utilities/pageLoad.js";
 import { clearDom } from "./App/Utilities/clearDom.js";
 import { menuPage } from "./App/menuItems/menu.js";
 import { menuBar }  from "./App/Utilities/menuBar.js";
+import { aboutUs }  from "./App/menuItems/about.js";
 
 
     
@@ -22,6 +23,8 @@ import { menuBar }  from "./App/Utilities/menuBar.js";
                 break;
               case "About Us": //New Module to append About Us to the page
                 clearDom();
+                menuBar();
+                aboutUs();
               break;
               case "Menu":  //New Module to append Menu to the page
                 clearDom();
