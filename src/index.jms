@@ -7,7 +7,7 @@ import { aboutUs }  from "./App/menuItems/about.js";
 
 
     
-    const listenForMenuClick = ()=>{
+   export const listenForMenuClick = ()=>{
       const listContainer = document.querySelector(".listContainer");
       if(listContainer){
         const anchorTags = listContainer.querySelectorAll("li a");
@@ -20,6 +20,7 @@ import { aboutUs }  from "./App/menuItems/about.js";
             switch(strVal){
               case "Home": //New Module to append Home Page to the page
                 clearDom();
+                homePage();
                 break;
               case "About Us": //New Module to append About Us to the page
                 clearDom();

@@ -1,3 +1,5 @@
+import { listenForMenuClick } from "../../index.jms";
+
 //Menu Module
 export const menuPage = ()=> {
 
@@ -96,7 +98,10 @@ export const menuPage = ()=> {
     bottomDiv.appendChild(divHeader);
     bottomDiv.appendChild(div1);
     backgroundDiv.appendChild(bottomDiv);
-    
 
+
+    
+    
+    listenForMenuClick();
    
 };
